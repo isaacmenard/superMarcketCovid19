@@ -1,0 +1,216 @@
+/* CSS Document */
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(62,44,0,1.00);
+	border-bottom: 8px solid rgba(33,18,0,1.00);
+	z-index: 100;
+}
+
+.left{
+	position: fixed;
+	top: 90px;
+	left: 0;
+	width: 14%;
+	height: 600px;
+	background-color: rgba(62,44,0,1.00);
+	border-bottom: 8px solid rgba(33,18,0,1.00);
+	border-top: 8px solid rgba(33,18,0,1.00);
+	border-right: 8px solid rgba(33,18,0,1.00);
+	z-index: 100;
+	display: inline-block;
+	color: antiquewhite;
+}
+.left li{
+	margin: 5px;
+}
+.left img{
+	position: absolute;
+	margin-top: 15px;
+	width: 30px;
+	height: auto;
+	right: 10px;
+	cursor:pointer;
+}
+.left h3{
+	display: inline-block;
+}
+
+
+
+.rightHeadContenaire{
+	display: inline-block;
+	position: absolute;
+	right: 5px;
+	width: 200px;
+}
+.rightHeadContenaire h1{
+	display: inline-block;
+	margin-top: 10px;
+	position: absolute;
+}
+
+.textDialogue{
+	overflow: scroll;
+	padding: 40px;
+	width: 90%;
+	position: fixed;
+	height: 220px;
+	bottom: 50px;
+	font-size: 30px;
+	color: rgba(23,23,23,1.00);
+	background-color: antiquewhite;
+	border-radius: 30px;
+	border: rgba(244,192,141,1.00) solid 5px;
+	z-index: 100;
+	margin-left: 5%;
+}
+.mignion{
+	height: 20px;
+	width: auto;
+	position: absolute;
+	z-index: 2000000000;
+	transition: 1s;
+}
+.monster{
+    width: 15%;
+    height: auto;
+	z-index: 100;  
+  position: fixed;
+    bottom: 320px;
+    right: 5%;
+}
+
+header img{
+	margin: 5px;
+	height: 50px;
+	width: auto;
+	cursor: pointer;
+}
+
+.grass {
+  width: 100%;
+  height: 100%;
+  background-color: #358626;
+}
+.grass:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-image: url('img/grass.png');
+}
+.grass:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 70px, transparent 70px, transparent 140px);
+}
+html,
+body {
+	font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  margin: 0;
+	overflow: hidden;
+}
+div{
+	margin: 0;
+	padding: 0;
+}
+
+.pillon{
+	display: inline-block;
+}
+
+.pillonTop{
+	background-image: url("img/wallTop.png");
+	background-size: 100%;
+}
+
+.pillonLeft{
+	background-image: url("img/wallLeft.png");
+	background-size: 100%;
+	display: block;
+}
+
+.pillonDown{
+	background-image: url("img/wallDown.png");
+	background-size: 100%;
+}
+
+.pillonRight{
+	background-image: url("img/wallLeft.png");
+	background-size: 100%;
+	display: block;
+}
+.leftWallContenaire{
+	position: absolute;
+}
+.rightWallContenaire{
+	position: absolute;
+	right: 0;
+}
+.downWallContenaire{
+	position: absolute;
+	bottom: -8px;
+}
+.batiment{
+		background-image: url("img/floor.png");
+	z-index: 100;
+	position: absolute; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.batiment .int{
+	margin-top: -5px;
+}
+
+.batElement{
+	width: 50px;
+	height: 200px;
+		position: absolute;
+}
+.hour{
+	top : 720px;
+	position: absolute;
+	height: auto;
+	padding: 30px;
+	width: 10%;
+}
+
+.legumes{
+	background-color: greenyellow;
+	border: 3px solid green;
+}
+.boulangerie{
+	background-color: orange;
+	border: 3px solid orangered;
+}
+.charcuterie{
+	background-color: deeppink;
+	border: 3px solid rgba(240,139,199,1.00);
+}
+.sucrerie{
+	background-color: yellow;
+	border: 3px solid rgba(0,195,255,1.00);
+}
+.pq{
+	background-color: pink;
+	border: 3px solid hotpink;
+}
+
+.positionBat{
+	position: absolute;
+}
